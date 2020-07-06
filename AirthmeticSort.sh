@@ -56,3 +56,24 @@ do
         echo ${ARR[ELEMENT]}
 done
 
+#Sort into Ascending Order.
+for ((ENTRY=0 ; ENTRY<4 ; ENTRY++))
+do
+
+        for ((ELEMENT=0 ; ELEMENT<4-ENTRY-1 ; ELEMENT++))
+        do
+                if ((${ARR[ELEMENT]} > ${ARR[$((ELEMENT+1))]} ))
+                then
+                        TEMP=${ARR[ELEMENT]}
+                        ARR[$ELEMENT]=${ARR[$((ELEMENT+1))]}
+                        ARR[$((ELEMENT+1))]=$TEMP
+                fi
+        done
+done
+
+echo "Ascending Array:"
+for ((ELEMENT=0; ELEMENT<4; ELEMENT++))
+do
+        echo ${ARR[ELEMENT]}
+done
+
