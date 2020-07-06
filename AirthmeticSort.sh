@@ -21,3 +21,10 @@ echo "Compute c+a/b:-"$TOTAL3
 #Compute a%b+c
 TOTAL4=$(($a % $b + $c))
 echo "Compute a%b+c:-"$TOTAL4
+
+#Result store into dictionary
+DICT[TOTAL1]=$TOTAL1
+DICT[TOTAL2]=$TOTAL2
+DICT[TOTAL3]=$TOTAL3
+DICT[TOTAL4]=$TOTAL4
+
