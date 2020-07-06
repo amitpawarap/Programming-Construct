@@ -13,3 +13,7 @@ echo "compute a+b*c:-"$TOTAL1
 #Compute a*b+c
 TOTAL2=$(($a * $b + $c))
 echo "Compute a*b+c:-"$TOTAL2
+
+#Compute c+a/b
+TOTAL3=$(($c + $a / $b))
+echo "Compute c+a/b:-"$TOTAL3
